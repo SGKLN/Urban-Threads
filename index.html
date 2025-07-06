@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Threadz</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1602810314744-58a3c8f3bd5a') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #1e90ff;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product h3 {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .about {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Urban Threadz</h1>
+    <p style="margin-top:1rem;">Streetwear Redefined.</p>
+  </header>
+
+  <nav>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="products">
+    <h2>Featured Drops</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://chat.openai.com/mnt/data/b44edab5-18bc-4e9a-8f38-a713d61abbbe.png" alt="Hoodie">
+        <h3>Classic Hoodie – $35</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1602810314367-5eb058d51f8f" alt="Tee">
+        <h3>Signature Tee – $20</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1593032290585-84fba1ecf401" alt="Cap">
+        <h3>Logo Cap – $15</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Urban Threadz</h2>
+    <div class="about">
+      <p>Urban Threadz is a fresh streetwear brand built for the bold. We blend modern style with comfort so you can look good and feel good. Whether you're in the studio, the streets, or chilling with friends — our gear keeps you ready for the moment.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Want a custom website like this? Hit me up: <strong>yourname@gmail.com</strong><br/>Instagram: <strong>@yourhandle</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Urban Threadz. All rights reserved.</p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">TikTok</a> | 
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
